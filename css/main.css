@@ -61,8 +61,13 @@ header {
     width: 150px;
     height: 150px;
     background-image: url('../img/bridgerton_sprites.png')
-
 }
+
+#simon { background-position: -150px 0;}
+#eloise { background-position: -300px 0;}
+#anthony { background-position: -450px 0;}
+#phenelope { background-position: -600px 0;}
+#danbury { background-position: -750px 0;}
 
 article {
     padding: 20px;
