@@ -10,8 +10,9 @@
 html, body { height: 100%; }
 
 body { 
-    font-family: sans-serif;
-    background-image: url('../img/blue_background.jpg');
+    font-family: sans-serifSource Code Variable;
+    background-image: url('../img/background_house.png');
+    padding-top: 4%;
     background-color:rgba(250, 251, 253, 0.623);
     color: rgb(254, 254, 255);
 }
@@ -25,13 +26,15 @@ header {
 
 #main-logo { 
     width: 440px;
-    padding: 30px, 0;
+    padding: 15px, 0;
 }
 
 #character_nav {
     text-align: center;
-    background-color: rgba(42, 83, 94, 0.409);
-    background-image: url('../img/background_house.png');
+    background-color: rgba(202, 214, 207, 0.68);
+    margin-bottom: 1%;
+
+    background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -39,6 +42,7 @@ header {
 .characters { list-style-type: none; }
 
 .characters li { 
+    position: relative;
     display: inline-block; 
     height: 220px;
     margin: 15px 8px;
@@ -48,13 +52,21 @@ header {
 }
 
 .characters li h5 {
-    padding: 10px 8px;
+    position: relative;
+    color: aliceblue;
+    padding: 12px 8px;
+    z-index: 5000;
 }
+
+.characters li a { text-decoration: none; }
+
 
 .purple_bumper {
     width: 100%;
     height: 6px;
     background-color: rgb(88, 55, 118);
+    transition: height 0.2s ease;
+    position: absolute;
 }
 
 .sprite {
@@ -71,7 +83,7 @@ header {
 
 article {
     padding: 20px;
-    color: rgb(78, 38, 146);
+    color: rgb(223, 229, 237);
 }
 
 article h3 {
@@ -94,3 +106,105 @@ footer {
     height: 60px;
     background-color:rgba(3, 2, 10, 0.725) ;
 }
+
+.sticky_footer {
+    position: sticky;
+    top: 100%;
+    height: 70px;
+    background-color: rgba(3, 2, 10, 0.725);
+}
+
+.sprite:hover {background-position-y:-150 !important;}
+
+.characters li:hover .purple_bumper { height: 70px}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(120, 60, 109);
+    background-image: url('../img/daphne_lb.jpeg');
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    z-index: 5000;
+    display: none;
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: aliceblue;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lightbox_close:hover {opacity: 0.5; color:rgb(175, 171, 180)}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading { 
+    color: white;
+    text-align: left;}
+
+.lb_text { 
+    lign-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+.lightbox:target { display: block; }
+
+.lightbox2 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(91, 140, 163);
+    background-image: url('../img/cimon_lb.jpeg');
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    z-index: 5000;
+    display: none;
+}
+
+.lightbox2_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: aliceblue;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lightbox2_close:hover {opacity: 0.5; color:rgb(15, 27, 95)}
+
+.lightbox2 article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb2_text, .lb2_heading { 
+    text-align: left;
+    color: white;
+}
+
+.lb2_text { 
+    lign-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+.lightbox2:target { display: block; }
