@@ -12,6 +12,7 @@ html, body { height: 100%; }
 body { 
     font-family: sans-serifSource Code Variable;
     background-image: url('../img/background_house.png');
+    background-repeat: no-repeat;
     padding-top: 4%;
     background-color:rgba(250, 251, 253, 0.623);
     color: rgb(254, 254, 255);
@@ -101,20 +102,19 @@ article p {
 }
 
 footer {
-    color:  rgb(78, 38, 146);
-    top: 100%;
-    height: 60px;
-    background-color:rgba(3, 2, 10, 0.725) ;
+    color: rgb(249, 248, 250);
+    padding: 20px 0;
+    text-align: center;
 }
 
 .sticky_footer {
     position: sticky;
     top: 100%;
-    height: 70px;
-    background-color: rgba(3, 2, 10, 0.725);
+    height: 77px;
+    background-color: rgba(3, 2, 10, 0.589);
 }
 
-.sprite:hover {background-position-y:-150 !important;}
+.sprite:hover {background-position-y:-150px !important;}
 
 .characters li:hover .purple_bumper { height: 70px}
 
