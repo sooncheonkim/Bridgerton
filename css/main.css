@@ -10,10 +10,10 @@
 html, body { height: 100%; }
 
 body { 
-    font-family: sans-serifSource Code Variable;
+    font-family:'Times New Roman', Times, serif;
     background-image: url('../img/background_house.png');
     background-repeat: no-repeat;
-    padding-top: 4%;
+    padding-top: 2%;
     background-color:rgba(250, 251, 253, 0.623);
     color: rgb(254, 254, 255);
 }
@@ -21,13 +21,12 @@ body {
 header {
     background-color: rgb(244, 248, 250) ;
     position: sticky;
-    top: 0;
     text-align: center ;
+    padding: 20px;
 }
 
 #main-logo { 
     width: 440px;
-    padding: 15px, 0;
 }
 
 #character_nav {
@@ -76,29 +75,29 @@ header {
     background-image: url('../img/bridgerton_sprites.png')
 }
 
-#simon { background-position: -150px 0;}
+#cimon { background-position: -150px 0;}
 #eloise { background-position: -300px 0;}
 #anthony { background-position: -450px 0;}
 #phenelope { background-position: -600px 0;}
 #danbury { background-position: -750px 0;}
 
 article {
-    padding: 20px;
-    color: rgb(223, 229, 237);
+    font-family:'Times New Roman', Times, serif ; 
+    padding: 30px;
+    color: rgb(250, 249, 248);
 }
 
 article h3 {
-    font-size: 2.3em;
+    font-size: 2.8em;
     text-align: center;
     margin-bottom: 14px;
 }
 
 article p {
-    width: 80%;
-    font-size: 22px;
+    width: 100%;
+    font-size: 28px;
     line-height: 1.2;
     text-align: center;
-    margin: 0, auto;
 }
 
 footer {
@@ -111,7 +110,7 @@ footer {
     position: sticky;
     top: 100%;
     height: 77px;
-    background-color: rgba(3, 2, 10, 0.589);
+    background-color: rgba(69, 119, 127, 0.672);
 }
 
 .sprite:hover {background-position-y:-150px !important;}
