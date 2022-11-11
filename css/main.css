@@ -81,10 +81,6 @@ header {
 #phenelope { background-position: -600px 0;}
 #danbury { background-position: -750px 0;}
 
-.sprite:hover {background-position-y:-150 !important;}
-
-.characters li:hover .purple_bumper { height: 70px}
-
 article {
     padding: 20px;
     color: rgb(223, 229, 237);
@@ -117,6 +113,10 @@ footer {
     height: 70px;
     background-color: rgba(3, 2, 10, 0.725);
 }
+
+.sprite:hover {background-position-y:-150 !important;}
+
+.characters li:hover .purple_bumper { height: 70px}
 
 .lightbox {
     width: 100vw;
