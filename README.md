@@ -1,4 +1,4 @@
-![alt text](img/readme.png"Logo Title Text 1")
+![alt text](img/readme.png "Logo Title Text 1")
 
 
 # Bridgerton Character Bio Build
