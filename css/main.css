@@ -72,7 +72,7 @@ header {
 .sprite {
     width: 150px;
     height: 150px;
-    background-image: url('../img/bridgerton_sprites.png')
+    background-image: url('../img/sprite.png')
 }
 
 #cimon { background-position: -150px 0;}
